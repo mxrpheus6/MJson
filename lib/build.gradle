@@ -10,6 +10,21 @@ plugins {
     id 'java-library'
 }
 
+group = 'io.github.mxrpheus6'
+version = '1.0.0'
+
+jar {
+    archiveBaseName = 'mjson'
+    archiveVersion = version
+
+    manifest {
+        attributes(
+                'Implementation-Title': 'mjson',
+                'Implementation-Version': version
+        )
+    }
+}
+
 repositories {
     // Use Maven Central for resolving dependencies.
     mavenCentral()
